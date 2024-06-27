@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        body {
+            background-color: yellowgreen;
+        }
+        h2 {
+            background-color: rgb(0, 12, 12);
+            width: 100%;
+            color: #ededed;
+            text-align: center;
+            padding: 10px;
+        }
+        .div {
+            display: flex;
+            justify-content: space-between;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        button {
+            width: 150px;
+            height: 50px;
+            background-color: aqua;
+            border-radius: 20px;
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        img {
+            position: relative;
+            top: 350px;
+            transition: transform 0.5s;
+        }
+        .rotate {
+            transform: rotate(90deg);
+        }
+        .skew {
+            transform: skew(20deg, 30deg);
+        }
+        .scale {
+            transform: scale(1.5);
+        }
+        .translate {
+            transform: translate(100px, 100px);
+        }
+    </style>
+</head>
+<body><h2>TANSITION TASK</h2>
+    <div class="div">
+        <button onclick="applyTransformation('rotate')"><a href="#a">Rotate</a></button>
+        <button onclick="applyTransformation('skew')"><a href="#b">Skew</a></button>
+        <button onclick="applyTransformation('scale')"><a href="#c">Scale</a></button>
+        <button onclick="applyTransformation('translate')"><a href="#d">Translate</a></button>
+    </div>
+    <div>
+        <center>
+            <img id="image" src="./SOTTR_Wallpaper_2560x1400.jpg" width="400" height="200">
+        </center>
+    </div>
+
+    <script>
+        function applyTransformation(transformation) {
+            const image = document.getElementById('image');
+            image.className = ''; 
+            void image.offsetWidth; 
+            image.classList.add(transformation);
+        }
+    </script>
+</body>
+</html>
