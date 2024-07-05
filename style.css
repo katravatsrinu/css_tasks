@@ -1,0 +1,50 @@
+@import url(https://fonts.google.com/share?selection.family=Alata|Candal|Francois+One|Merriweather+Sans:ital,wght@0,300..800;1,300..800|Roboto+Condensed:ital,wght@0,100..900;1,100..900|Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900|Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700);
+:root{
+    --background-color: #FBFBFB;
+    --dark-green-color:#113448;
+    --light-green-color:#14BF98;
+    --dark-gray-color:#484A46;
+    --light-gray-color:#787976;
+    --white:#FFFFFF;
+    --disabled-color:#E9ECEF;
+    --dark-white-color:#DFE5EC;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color); 
+}
+h1, h2, h3, h4, h5, h6, p, a, span, button, li, input, textarea, label, select, option{
+    font-family: 'Open Sans',sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.home{
+    background-image: url(./assets/home.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: fixed;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
