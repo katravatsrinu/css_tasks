@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(109, 62, 62, 0.1);
+            
+        }
+        .top {
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            flex-direction: column;
+            text-align: center;
+        
+            
+        }
+        .top img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            position: relative;
+            left: 230px;
+            top: 150px;
+            border: solid rgb(145, 46, 46);
+            padding: 3px;
+                                                                            
+        }
+        .top .tit {
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow:1px 1px red ;
+        }
+        .top p {
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0.5px 1px black;
+        }
+        .main {
+            display: flex;
+            padding: 20px;
+        }
+        .left, .right {
+            padding: 20px;
+        }
+        .left {
+            width: 40%;
+        }
+        .right {
+            width: 60%;
+            /* background-color: #f9f9f9;
+            padding: 20px;
+            /* border-left: 1px solid #ddd; */
+        }
+        .info i {
+            margin-right: 10px;
+        }
+        h3 {
+            margin-top: 20px;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px rgb(218, 38, 38);
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .skills, .projects, .trainings, .declaration {
+            margin-bottom: 20px;
+        }
+        hr{
+            box-shadow: 1px 1px 2px rgba(47, 26, 142);
+        }
+        .tit{ 
+            position: relative;
+            left: -230px;
+            letter-spacing: 5px;
+            bottom: 50px;
+
+        }
+        .j{
+            position: relative;
+            left: -250px;
+            letter-spacing: 7px;
+            bottom: 50px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="./assets/CMD.jpg" alt="Profile Picture">
+            <div class="tit">KATRAVATH SRINU</div>
+            <p class="j">Web Developer</p>
+        </div>
+        <div class="main">
+            <div class="left">
+                <div class="info">
+                    <p><i class="fa-solid fa-phone"></i> +91-6303437873</p>
+                    <p><i class="fa-solid fa-envelope"></i>katravathsreenu380@gmail.com@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Hyderabad, IN 500042</p>
+                    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/katravath-srinu-3293a6276/">LinkedIn</a></p>
+                    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/katravatsrinu">GitHub</a></p>
+                </div>
+                <hr>
+                <div class="skills">
+                    <h3>TECHNICAL SKILLS</h3>
+                    <ul>
+                        <li><b>Languages:-</b> JAVA, Python, HTML, CSS, JavaScript</li>
+                        <li><b>Tools:-</b>GitHub, Excel, Power Point, SQLite, Aws</li>
+                        <li><b>Platforms:-</b>PyCharm, Visual Studio Code, Intellij IDEA</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="projects">
+                    <h3>PROJECTS</h3>
+                    <li>
+                        <strong>Flight Delay Prediction Using SVM</strong> - PYTHON, Pandas, NumPy,scikit-learn,matplotlib,seaborn
+                        <p><strong>Description:</strong> Predicting flight delays aims to enhance operational efficiency for airlines and airports, improve passenger satisfaction by providing timely information, and reduce associated costs. Accurate delay predictions enable better resource management, proactive decision-making, and a more seamless travel experience for passengers.</p>
+                    </li>
+                </div>
+            </div>
+            <hr>
+            <div class="right">
+                <div class="projects">
+                    <h3>ADDITIONAL PROJECTS</h3>
+                    <li>
+                        <strong>Iris Recognition Using Image Processing</strong> - PYTHON, Pandas, NumPy,scikit-learn,matplotlib,seaborn
+                        <p>iris recognition using image processing is to provide a highly accurate and secure method of biometric identification by analyzing the unique patterns in the iris. This technology enhances security systems and ensures reliable identification in various applications</p>
+                    </li>
+                    <hr>
+                </div>
+                <div class="trainings">
+                    <h3>TRAININGS AND CERTIFICATIONS</h3>
+                    <li>Python - <a href="#">Link</a></li>
+                    <li>AI & ML - <a href="#">Link</a></li>
+                    <li>SQL - <a href="#">Link</a></li>
+                    <li>DSA Certificate - <a href="#">Link</a></li>
+                    <hr>
+                </div>
+                <div class="soft">
+                    <h3>SOFT SKILLS</h3>
+                    <li>COMMUNICATION</li>
+                    <li>TEAMWORK</li>
+                    <li>ADAPTABILITY</li>
+                    <li>TIME MANAGEMENT</li>
+                    <li>LEADERSHIP</li>
+                    <hr>
+
+                </div>
+                <div class="declaration">
+                    <div class="education">
+                        <h3>EDUCATION</h3>
+                        <li><strong>MLRITM </strong>- BTech Computer Science and Engineering (IT), 2024</li>
+                        <li><strong>Rao's Junior College</strong> - Board Of Intermediate Education (MPC), 2020</li>
+                        <li> <strong>Zilla Parisad High School</strong>, 2017</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
+
+
+
